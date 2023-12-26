@@ -3,12 +3,17 @@ button:
   back: 返回
   go: 确定
   home: 首页
+  reset: 重置
   toggle_dark: 切换深色模式
   toggle_langs: 切换语言
 intro:
+  aka: 也叫
   desc: 固执己见的 Vite 项目模板
   dynamic-route: 动态路由演示
   hi: 你好，{name}
-  aka: 也叫
   whats-your-name: 输入你的名字
+lachelein:
+  guide:
+    desc: 3岛周任务速记
+    title: 3岛周任务
 not-found: 未找到页面

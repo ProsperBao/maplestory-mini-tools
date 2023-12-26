@@ -3,12 +3,17 @@ button:
   back: Back
   go: GO
   home: Home
+  reset: reset
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
 intro:
+  aka: Also known as
   desc: Opinionated Vite Starter Template
   dynamic-route: Demo of dynamic route
   hi: Hi, {name}!
-  aka: Also known as
   whats-your-name: What's your name?
+lachelein:
+  guide:
+    desc: Lachelein week quest shorthand
+    title: Lachelein Week Quest
 not-found: Not found
