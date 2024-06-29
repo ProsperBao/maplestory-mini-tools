@@ -13,6 +13,8 @@ export interface Buff {
   custom?: boolean
   /** End time */
   end?: string
+  /** Adjust time */
+  adjust?: number
 }
 
 export function useBuffList() {

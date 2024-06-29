@@ -26,6 +26,7 @@ function handleAdd(idx: number) {
 function handleReset(idx: number) {
   const target = startList.value[idx]
   startList.value[idx].end = calcEnd(target.duration)
+  startList.value[idx].adjust = 0
   stop()
 }
 
@@ -38,6 +39,7 @@ function handleResetAll() {
   startList.value = startList.value.map(item => ({
     ...item,
     end: dayjs().add(item.duration, 'second').toISOString(),
+    adjust: 0,
   }))
   stop()
 }
@@ -47,7 +49,26 @@ function handleClearAll() {
   stop()
 }
 
-const check = ref<number[]>([])
+function handleSubAll() {
+  startList.value = startList.value.map(item => ({
+    ...item,
+    adjust: (item.adjust || 0) + 1,
+  }))
+}
+
+function handleSub(idx: number) {
+  startList.value = startList.value.map((item, i) => {
+    if (i === idx) {
+      return {
+        ...item,
+        adjust: (item.adjust || 0) + 1,
+      }
+    }
+    return item
+  })
+}
+
+const check = useLocalStorage<number[]>('check', [])
 function handleClearCheck() {
   check.value = []
 }
@@ -74,6 +95,9 @@ function handleQuick() {
           <n-button size="small" @click="handleClearAll">
             {{ t('countdown.index.clearall') }}
           </n-button>
+          <n-button size="small" @click="handleSubAll">
+            -1s
+          </n-button>
         </div>
       </template>
       <cutdown-item
@@ -87,6 +111,9 @@ function handleQuick() {
         <template #operate>
           <n-button size="small" @click="handleReset(idx)">
             {{ t('countdown.index.reset') }}
+          </n-button>
+          <n-button size="small" @click="handleSub(idx)">
+            -1s
           </n-button>
         </template>
       </cutdown-item>

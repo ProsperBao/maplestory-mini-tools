@@ -34,6 +34,10 @@ function handleReset() {
 watch(() => props.item.end, (val) => {
   val && handleReset()
 })
+const adjustDuration = computed(() => {
+  const { item } = toRefs(props)
+  return item.value.duration - (item.value.adjust || 0)
+})
 </script>
 
 <template>
@@ -45,7 +49,7 @@ watch(() => props.item.end, (val) => {
       </div>
       <div flex items-center gap-2>
         <slot name="operate" />
-        <n-countdown v-if="item.end" ref="countdownRef" :duration="item.duration * 1000" :precision="2" @finish="emit('finish')" />
+        <n-countdown v-if="item.end" ref="countdownRef" :key="adjustDuration" :duration="adjustDuration * 1000" :precision="2" @finish="emit('finish')" />
       </div>
     </div>
   </div>
