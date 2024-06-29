@@ -48,6 +48,7 @@ countdown:
     quick: Quick Add
     reset: Reset
     resetall: Reset All
+    resetend: Reset End
     right: Added
     stop: Stop Music
 lachelein:

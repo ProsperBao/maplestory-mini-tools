@@ -44,6 +44,20 @@ function handleResetAll() {
   stop()
 }
 
+function handleResetEnd() {
+  // 只重置结束时间到了的
+  startList.value = startList.value.map((item) => {
+    if (dayjs().isAfter(item.end)) {
+      return {
+        ...item,
+        end: dayjs().add(item.duration, 'second').toISOString(),
+        adjust: 0,
+      }
+    }
+    return item
+  })
+}
+
 function handleClearAll() {
   startList.value = []
   stop()
@@ -91,6 +105,9 @@ function handleQuick() {
           </n-button>
           <n-button size="small" @click="handleResetAll">
             {{ t('countdown.index.resetall') }}
+          </n-button>
+          <n-button size="small" @click="handleResetEnd">
+            {{ t('countdown.index.resetend') }}
           </n-button>
           <n-button size="small" @click="handleClearAll">
             {{ t('countdown.index.clearall') }}
