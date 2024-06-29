@@ -91,7 +91,7 @@ function handleQuick() {
         </template>
       </cutdown-item>
     </n-card>
-    <n-card w-80>
+    <n-card w-90>
       <template #header>
         <div flex justify-center gap-2>
           {{ t('countdown.index.right') }}

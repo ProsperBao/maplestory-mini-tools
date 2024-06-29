@@ -27,7 +27,7 @@ useHead({
 </script>
 
 <template>
-  <n-config-provider :theme="darkTheme">
+  <n-config-provider :theme="isDark ? darkTheme : ''">
     <RouterView />
   </n-config-provider>
 </template>

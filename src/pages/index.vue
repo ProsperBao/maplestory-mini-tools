@@ -28,7 +28,7 @@ const guideList = computed<GuideItem[]>(() => [
 
 <template>
   <div>
-    <ul m-auto mt-5 w-145 flex flex-wrap items-center justify-center gap-2>
+    <ul m-auto mt-5 w-150 flex flex-wrap items-center justify-center gap-2>
       <RouterLink v-for="item in guideList" :key="item.path" v-slot="{ navigate }" custom :to="item.path">
         <li b="~ 1" w="49%" flex cursor-pointer items-center gap-4 b-rd-2 px-4 py-2 @click="navigate">
           <img :src="item.icon" :alt="item.title" h-6 w-6>
