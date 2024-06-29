@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { darkTheme } from 'naive-ui'
+
 // https://github.com/vueuse/head
 // you can use this to manipulate the document head in any components,
 // they will be rendered correctly in the html results with vite-ssg
@@ -25,5 +27,7 @@ useHead({
 </script>
 
 <template>
-  <RouterView />
+  <n-config-provider :theme="darkTheme">
+    <RouterView />
+  </n-config-provider>
 </template>

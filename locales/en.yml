@@ -6,12 +6,50 @@ button:
   reset: reset
   toggle_dark: Toggle dark mode
   toggle_langs: Change languages
-intro:
-  aka: Also known as
-  desc: Opinionated Vite Starter Template
-  dynamic-route: Demo of dynamic route
-  hi: Hi, {name}!
-  whats-your-name: What's your name?
+countdown:
+  buff:
+    preset:
+      '1': Legion's Wealth
+      '10': EXP Acquisition Potion
+      '11': Ask Herb
+      '12': Greater Blessing of the Guild
+      '13': Extreme Green Potion
+      '14': Extreme Red Potion
+      '15': Extreme Gold Potion
+      '16': Rune Porwer
+      '2': Legion's Luck
+      '3': Legion's Might
+      '4': Legion's Expertise
+      '5': VIP Buff(EXP)
+      '6': VIP Buff(Status)
+      '7': 50% Bonus EXP Coupon
+      '8': EXP Coupon
+      '9': Wealth Acquisition Potion
+      prefix:
+        '1': 2x
+        '2': 3x
+        '3': Small
+      suffix:
+        '1': Lv. 1
+        '2': Lv. 2
+        '3': Lv. 3
+        '4': (15 min)
+        '5': (30 min)
+        '6': (1 hour)
+  guide:
+    desc: Notice your buff Countdown
+    title: Buff Countdown
+  index:
+    add: Add
+    added: Add
+    clear: Clear
+    clearall: Clear All
+    left: Current Countdown
+    quick: Quick Add
+    reset: Reset
+    resetall: Reset All
+    right: Added
+    stop: Stop Music
 lachelein:
   guide:
     desc: Lachelein week quest shorthand

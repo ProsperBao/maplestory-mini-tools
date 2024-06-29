@@ -7,8 +7,20 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    CutdownIcon: typeof import('./components/Cutdown/Icon.vue')['default']
+    CutdownItem: typeof import('./components/Cutdown/Item.vue')['default']
+    CutdownName: typeof import('./components/Cutdown/Name.vue')['default']
+    Icon: typeof import('./components/Cutdown/Icon.vue')['default']
+    Name: typeof import('./components/Cutdown/Name.vue')['default']
+    NButton: typeof import('naive-ui')['NButton']
+    NCard: typeof import('naive-ui')['NCard']
+    NCheckbox: typeof import('naive-ui')['NCheckbox']
+    NCheckboxGroup: typeof import('naive-ui')['NCheckboxGroup']
+    NConfigProvider: typeof import('naive-ui')['NConfigProvider']
+    NCountdown: typeof import('naive-ui')['NCountdown']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheFooter: typeof import('./components/TheFooter.vue')['default']
+    TheHeader: typeof import('./components/TheHeader.vue')['default']
   }
 }

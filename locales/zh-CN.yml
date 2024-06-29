@@ -6,12 +6,37 @@ button:
   reset: 重置
   toggle_dark: 切换深色模式
   toggle_langs: 切换语言
-intro:
-  aka: 也叫
-  desc: 固执己见的 Vite 项目模板
-  dynamic-route: 动态路由演示
-  hi: 你好，{name}
-  whats-your-name: 输入你的名字
+countdown:
+  buff:
+    preset:
+      '1': 联盟金
+      '10': 经验秘药
+      '11': 对话草药
+      '12': 家族祝福
+      '13': 公园绿
+      '14': 公园红
+      '15': 公园金
+      '2': 联盟绿
+      '3': 联盟红
+      '4': 联盟蓝
+      '5': VIP 经验
+      '6': VIP 状态
+      '8': 经验卷
+      '9': 财富秘药
+      prefix:
+        '1': 2倍
+        '2': 3倍
+        '3': 小型
+      suffix:
+        '1': 等级 1
+        '2': 等级 2
+        '3': 等级 3
+        '4': (15 分钟)
+        '5': (30 分钟)
+        '6': (1 小时)
+  guide:
+    desc: Buff 倒计时通知
+    title: Buff 倒计时
 lachelein:
   guide:
     desc: 3岛周任务速记

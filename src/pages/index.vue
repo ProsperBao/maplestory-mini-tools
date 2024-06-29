@@ -17,6 +17,12 @@ const guideList = computed<GuideItem[]>(() => [
     path: '/lachelein',
     icon: '/assets/lachelein/icon.png',
   },
+  {
+    title: t('countdown.guide.title'),
+    desc: t('countdown.guide.desc'),
+    path: '/countdown',
+    icon: '/assets/countdown/icon.png',
+  },
 ])
 </script>
 
