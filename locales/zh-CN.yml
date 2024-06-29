@@ -16,11 +16,13 @@ countdown:
       '13': 公园绿
       '14': 公园红
       '15': 公园金
+      '16': 符文
       '2': 联盟绿
       '3': 联盟红
       '4': 联盟蓝
       '5': VIP 经验
       '6': VIP 状态
+      '7': 50% 经验券
       '8': 经验卷
       '9': 财富秘药
       prefix:
@@ -37,6 +39,17 @@ countdown:
   guide:
     desc: Buff 倒计时通知
     title: Buff 倒计时
+  index:
+    add: 添加
+    added: 添加
+    clear: 清除
+    clearall: 清空
+    left: 当前倒计时
+    quick: 快速添加
+    reset: 重置
+    resetall: 重置全部
+    right: 添加
+    stop: 停止播放
 lachelein:
   guide:
     desc: 3岛周任务速记
